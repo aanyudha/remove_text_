@@ -42,4 +42,4 @@ for frame_filename in sorted(os.listdir(detected_text_frames_folder)):
 
     print(f'Teks dihilangkan dari {frame_filename} dan disimpan di {output_cleaned_frames_folder}')
 
-print(f'Proses selesai! Frame yang telah dibersihkan disimpan di folder {output_cleaned_frames_folder}')rmv
+print(f'Proses selesai! Frame yang telah dibersihkan disimpan di folder {output_cleaned_frames_folder}')

@@ -1,6 +1,3 @@
-pip install opencv-python-headless pytesseract
-
-
 import cv2
 import os
 import pytesseract
@@ -14,7 +11,7 @@ if not os.path.exists(detected_text_frames_folder):
     os.makedirs(detected_text_frames_folder)
 
 # Konfigurasi Tesseract
-pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'  # Ganti dengan path ke tesseract di sistem Anda
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'  # Ganti dengan path ke tesseract di sistem Anda
 
 # Membaca setiap frame dan mendeteksi tulisan
 for frame_filename in sorted(os.listdir(output_frames_folder)):
@@ -36,4 +33,4 @@ for frame_filename in sorted(os.listdir(output_frames_folder)):
     else:
         print(f'Tidak ada teks terdeteksi pada {frame_filename}.')
 
-print(f'Proses selesai! Frame dengan teks disimpan di folder {detected_text_frames_folder}')cek
+print(f'Proses selesai! Frame dengan teks disimpan di folder {detected_text_frames_folder}')
